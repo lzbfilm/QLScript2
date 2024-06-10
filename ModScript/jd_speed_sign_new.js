@@ -4,9 +4,9 @@ cron "0 6,13,19 * * *" jd_speed_sign_Mod.js, tag:京东特价版任务
 //详细说明参考 https://github.com/ccwav/QLScript2.
 
 const $ = new Env('京东特价版任务');
-const notify = $.isNode() ? require('./sendNotify') : '';
+const notify = $.isNode() ? require('../sendNotify') : '';
 //Node.js用户请在jdCookie.js处填写京东ck;
-const jdCookieNode = $.isNode() ? require('./jdCookie.js') : '';
+const jdCookieNode = $.isNode() ? require('../jdCookie.js') : '';
 
 let maxThread = 5; //并发数
 if ($.isNode() && process.env.JDSPEED_MAXTHREAD){
