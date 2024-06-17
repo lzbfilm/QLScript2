@@ -22,7 +22,7 @@ const api = got.extend({
     });
 
 let ShowSuccess = "false",
-CKAlwaysNotify = "true",
+CKAlwaysNotify = "false",
 CKAutoEnable = "true",
 NoWarnError = "false";
 
