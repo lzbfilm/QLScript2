@@ -21,7 +21,7 @@ const api = got.extend({
         responseType: 'json',
     });
 
-let ShowSuccess = "false",
+let ShowSuccess = "true",
 CKAlwaysNotify = "false",
 CKAutoEnable = "true",
 NoWarnError = "false";
